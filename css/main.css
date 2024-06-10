@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: "vazir";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+  }  
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    padding: 10px 0px;
+     
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+:root{
+    --primary_color: #003269;
+    --second_color: #02bfbb;
+    --third_color: #002752;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url("/fonts/Vazir-Thin-FD-WOL.woff") format("woff");
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main_header{
+    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    background: var(--primary_color);
+    border-bottom: 4px solid var(--second_color);
+    height: 60px;
+
+}
+
+.inner_header {
+    padding: 5px 0;
+}
+  
+.inner_header::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.date_search_desk{
+    position: relative;
+}
+
+.menu_botton {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .menu_botton{
+        cursor: pointer;
+        position: relative;
+    }
+}
+
+.h_first_col {
+    width: 33%;
+    float: right;
+
+}
+
+.date {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .date{
+        display: inline-block;
+        color: white;
+        position: absolute;
+        right: 100px;
+        font-size: 0.8rem;
+        top: 12px;
+
+    }
+}
+
+.logo {
+    width: 33%;
+    padding-top: 6px;
+    float: right;
+}
+
+.logo_inner{
+    width: 103px;
+    margin: 0 auto;
+}
+
+.logo_inner > a {
+    display: block;
+}
+
+.logo_inner > a img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logo .h_second_col {
+    float: right;
+    width: 33%;
+    text-align: center;
+}
+
+.search{
+    height: 50px;
+    float: left;
+    width: 45px;
+
+}
+
+.search_desk {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .search_desk {
+      display: inline-block;
+      position: absolute;
+      top: 9px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .search {
+      display: none;
+    }
+    .h_three_col{
+        display: inline-block;
+    }
+}
+
+.search .h_three_col {
+    float: right;
+    text-align: left;
+    width: 33%;
+    padding-top: 3px;
+}
+  
+
+.menu_list{
+    position: absolute;
+    top: 60px;
+    background: var(--primary_color);
+    width: 82%;
+    right: 0px;
+    padding-right: 0;
+    clear: both;
+}
+.menu_list > li > a {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .menu_list{
+        display: none;
+    }
+}
+
+.submenu{
+    background: var(--third_color);
+    padding-right: 0;
+    border-top: 1px solid #fff;
+}
+
+.submenu > li::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.submenu > li {
+    border-bottom: 1px solid white;
+}
+
+.submenu > li > a {
+    position: relative;
+    right: 35px;
+}
+
+
+.minus_icon{
+    float: left;
+    position: relative;
+    left: 10px;
+    bottom: 6px;
+}
+
+.plus_icon{
+    float: left;
+    position: relative;
+    left: 8px;
+}
+
+.screen_menu{
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .screen_menu{
+        display: inline-block;
+        position: absolute;
+        right: 65%;
+        top: 2px;
+        height: 52px;
+
+    }
+    .screen_menu > li {
+        float: right;
+        padding-left: 15px;
+        height: 4px;
+    }
+}
+
+.menu_list > li {
+    position: relative;
+    top: 10px;
+} 
