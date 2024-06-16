@@ -236,8 +236,8 @@ button {
     .screen_menu{
         display: inline-block;
         position: absolute;
-        right: 65%;
-        top: 2px;
+        right: 63%;
+        top: 6px;
         height: 52px;
 
     }
